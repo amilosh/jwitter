@@ -1,0 +1,14 @@
+apply plugin: 'war'
+
+dependencies {
+    compile 'org.springframework:spring-core:4.3.4.RELEASE'
+    compile 'org.springframework:spring-web:4.3.4.RELEASE'
+    compile 'org.springframework:spring-webmvc:4.3.4.RELEASE'
+    compile 'javax.servlet:jstl:1.1.2'
+    compile 'taglibs:standard:1.1.2'
+    providedCompile 'javax.servlet:servlet-api:2.5'
+    compile 'org.apache.tiles:tiles-jsp:3.0.5'
+    compile 'org.apache.tiles:tiles-servlet:3.0.5'
+    compile 'org.apache.tiles:tiles-template:3.0.5'
+    compile 'org.apache.tiles:tiles-el:3.0.5'
+}

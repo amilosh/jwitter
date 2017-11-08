@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <definition name="template" template="/WEB-INF/views/template/template.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header" value="/WEB-INF/views/template/defaultHeader.jsp"/>
+        <put-attribute name="navBar" value="/WEB-INF/views/template/defaultNavBar.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/template/defaultContent.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/views/template/defaultFooter.jsp"/>
+    </definition>
+
+    <definition name="index" extends="template">
+        <put-attribute name="title" value="Index page"/>
+        <put-attribute name="content" value="/WEB-INF/views/main/index.jsp"/>
+    </definition>
+
+    <definition name="startTemplate" template="/WEB-INF/views/template/start/startTemplate.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header" value="/WEB-INF/views/template/defaultHeader.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/template/defaultContent.jsp"/>
+    </definition>
+    <definition name="start" extends="startTemplate">
+        <put-attribute name="title" value="Start page"/>
+        <put-attribute name="header" value="/WEB-INF/views/start/startHeader.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/start/start.jsp"/>
+    </definition>
+    <definition name="login" extends="startTemplate">
+        <put-attribute name="title" value="Login page"/>
+        <put-attribute name="header" value="/WEB-INF/views/start/startHeader.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/start/login.jsp"/>
+    </definition>
+    <definition name="registration" extends="startTemplate">
+        <put-attribute name="title" value="Registration page"/>
+        <put-attribute name="header" value="/WEB-INF/views/start/registrationHeader.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/start/registration.jsp"/>
+    </definition>
+
+</tiles-definitions>
